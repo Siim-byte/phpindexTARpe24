@@ -12,5 +12,8 @@
         <li>
             <a href="https://siimbeloi24.thkit.ee" target="_blank">Vana index.html</a>
         </li>
+        <li>
+            <a href="?leht=gitKasud.php">GIT Käsud</a>
+        </li>
     </ul>
 </nav>

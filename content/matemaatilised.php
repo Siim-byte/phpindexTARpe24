@@ -13,7 +13,7 @@ echo "<strong>Vastused:</strong> <br> Liitmine: ".$liitmine."<br>";
 echo "Lahutamine: ".$lahut."<br>";
 echo "Korrutis: ".$korrutis."<br>";
 echo "Jagamine: ".$jagamine."<br>";
-echo "<h2>Omistamise operaatorid: </h2>";
+echo "<h3>Omistamise operaatorid: </h3>";
 echo "<br>";
 // $arv1++ - suurendamine ühe võrra $arv1=$arv1+1
 $arv1++;
@@ -25,30 +25,38 @@ echo $arv2."- vähendamine ühe võrra";
 echo "<br>";
 echo "<strong>Ruutjuur /sqrt()</strong>".sqrt($arv1);
 echo "<br>";
-echo "<strong>Kõige väiksem ja suurem</strong>";
+echo "<h3><strong>Kõige väiksem ja suurem</strong></h3>";
 echo "<br>";
-echo min($arv1, $arv2, $arv3, $arv4);
-echo max($arv1, $arv2, $arv3, $arv4);
-$arvud = array($arv1, $arv2, $arv3, $arv4);
-echo max($arvud);
-$arvud = array($arv1, $arv2, $arv3, $arv4);
-$arvud2 = array($arv2, $arv3, $arv4);
-echo max(max($arvud), max($arvud2));
+echo "otsib kõige väiksema massiivist ".min($arv1, $arv2, $arv3, $arv4); //otsib kõige väiksema massiivist
 echo "<br>";
-echo "<strong>Ümardamine</strong>";
+echo "otsib kõige suurema massiivist ".max($arv1, $arv2, $arv3, $arv4); //otsib kõige suurema massiivist
+echo "<br>";
+echo "<h3><strong>Ümardamine</strong></h3>";
 $arv6 = 10.456;
-echo round($arv6); // ümardab täisarvuks
-echo round($arv6, 2); //ümardab 2 komakohta
+echo "ümardab täisarvuks ".round($arv6); // ümardab täisarvuks
 echo "<br>";
-echo ceil($arv6); //ümardab ülespoole
-echo floor($arv6); //ümardab alla
+echo "ümardab 2 komakohta ".round($arv6, 2); //ümardab 2 komakohta
 echo "<br>";
-echo "<strong>Juhuslik arv</strong>";
+echo "ümardab ülespoole ".ceil($arv6); //ümardab ülespoole
+echo "<br>";
+echo "ümardab allapoole ".floor($arv6); //ümardab alla
+echo "<br>";
+echo "<h3><strong>Juhuslik arv</strong></h3>";
 echo "<br>";
 echo rand(); //juhuslik arv
-echo mt_rand();
-echo rand($arv1, $arv2); //piiratud juhuslik arv
 echo "<br>";
-echo "<strong>Trigonomeetria</strong>";
-echo cos($arv1); //cosinus
-echo deg2rad($arv1); //nurkade teisendamiseks radiaanideks
+echo mt_rand();
+echo "<br>";
+echo "piiratud juhuslik arv arv1 ja arv 2 vahel: ".rand($arv1, $arv2); //piiratud juhuslik arv
+echo "<br>";
+echo "<h3><strong>Trigonomeetria</strong></h3>";
+echo "cosinus ".cos($arv1); //cosinus
+echo "<br>";
+echo "nurkade teisendamiseks radiaanideks ".deg2rad($arv1); //nurkade teisendamiseks radiaanideks
+echo "<h2>Ristküliku pindala ülesanne</h2>";
+$a = 8;
+$b = 16;
+$pindala = $a * $b;
+echo "a = ".$a."<br>";
+echo "b = ".$b."<br>";
+echo "Ristküliku pindala: ".$pindala."<br>";

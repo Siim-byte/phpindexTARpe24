@@ -1,4 +1,11 @@
 <?php
+function clearVarsExcept($url, $varname){
+    $url=basename($url);
+    if(str_starts_with($url, "?")){
+        return "?$varname=".$_REQUEST[$varname];
+    }
+    return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
+}
 echo "<h2>Tekstifunktsioonid</h2>";
 $tekst = 'Veebirakendus on arvutitarkvara programm';
 echo $tekst; //näitab muutuja sisu
@@ -59,7 +66,7 @@ echo '<br>';
 echo "Linnas on 2 e tähte".":"."****e*e"
 
 ?>
-<form action="tekstifunktsioonid.php" method="post">
+<form action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "leht")?>" method="post">
     <label for="linn">Sisesta linnamimi</label>
     <input type="text" id="linn" name="linn">
     <input type="submit" value="Kontrolli">

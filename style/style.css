@@ -47,3 +47,16 @@ footer {
     text-align: center;
     padding: 8px;
 }
+.dropdown{
+    /*  display: none;*/
+    display: block;
+    position: absolute;
+    opacity: 0;
+    background: #ccc;
+
+    transition: all 0.3s ease;
+}
+
+.menu li:hover>ul{
+    opacity: 1;
+}

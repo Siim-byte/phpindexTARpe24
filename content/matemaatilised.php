@@ -74,7 +74,8 @@ echo "<li> Jagada esimene number teise numbrida, siis tuleb ";
 echo ($salaarv1/$salaarv2)."</li>";
 echo "<li> Teine arv ruudus on ";
 echo ($salaarv2*$salaarv2)."</li>";
-
+echo "<li> Esimene arv ruut on ";
+echo ($salaarv1*$salaarv1)."</li></ol>";
 function clearVarsExcept($url, $varname){
     $url=basename($url);
     if(str_starts_with($url, "?")){

@@ -60,3 +60,50 @@ $pindala = $a * $b;
 echo "a = ".$a."<br>";
 echo "b = ".$b."<br>";
 echo "Ristküliku pindala: ".$pindala."<br>";
+
+
+echo "<h2>Arvmõistatus. Arva ära kaks arvu vahemikus 0 - 10</h2>";
+$salaarv1= 6;
+$salaarv2= 2;
+//kirjuta matemaatilise tehtega või funksioonide abil 5 vihjet
+echo "<ol><li>Kui esimene arv korrutada 5, siis tuleb ";
+echo ($salaarv1*5)."</li>";
+echo "<li> liita kokku esimene arv neljaga ja jagada see 2, siis tuleb ";
+echo (($salaarv1+4)/2)."</li>";
+echo "<li> Jagada esimene number teise numbrida, siis tuleb ";
+echo ($salaarv1/$salaarv2)."</li>";
+echo "<li> Teine arv ruudus on ";
+echo ($salaarv2*$salaarv2)."</li>";
+
+function clearVarsExcept($url, $varname){
+    $url=basename($url);
+    if(str_starts_with($url, "?")){
+        return "?$varname=".$_REQUEST[$varname];
+    }
+    return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
+
+}
+?>
+<form action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "leht")?>" method="post">
+    <label for="arv1">Arv1</label>
+    <input type="number" id="arv2" name="arv2" min="0" max="10" step="1">
+    <br>
+    <label for="arv2">Arv2</label>
+    <input type="number" id="arv2" name="arv2" min="0" max="10" step="1">
+    <input type="submit" value="Kontrolli">
+</form>
+<?php
+
+if (isset($_REQUEST["arv1"])) {
+    if ($_REQUEST["arv1"] == "6") {
+        echo "Õige";
+    } else {
+        echo $_REQUEST["arv1"] . " on vale";
+    }
+}if (isset($_REQUEST["arv2"])) {
+    if ($_REQUEST["arv2"] == "2") {
+        echo "Õige";
+    } else {
+        echo $_REQUEST["arv2"] . " on vale";
+    }
+}

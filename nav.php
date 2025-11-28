@@ -35,5 +35,11 @@
                 <a href="?leht=galerii.php">Galerii</a>
             </li>
 
+                <li>
+                    <a href="/content/mobiilimall/blankett2.html">Anekdoodid</a>
+                </li>
+
+
+
         </ul>
 </nav>

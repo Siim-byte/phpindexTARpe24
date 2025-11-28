@@ -31,6 +31,9 @@
           <li>
                 <a href="?leht=gitKasud.php">GIT Käsud</a>
             </li>
+        <li>
+                <a href="?leht=galerii.php">Galerii</a>
+            </li>
 
         </ul>
 </nav>

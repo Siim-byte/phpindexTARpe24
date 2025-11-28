@@ -60,3 +60,7 @@ footer {
 .menu li:hover>ul{
     opacity: 1;
 }
+img {
+    border: 2px solid black;
+    border-radius: 50%;
+}

@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background: navajowhite;
+    margin: 0;
+    padding: 40px;
+    color: dodgerblue;
+    text-align: center;
+
+
+}
+
+h1 {
+    color: dodgerblue;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+
+}
+#listid{
+    text-align: center;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    color: gray;
+
+}
+
+
+
+
+
+
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.15em;
+    color: dodgerblue;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: dodgerblue;
+    color: white;
+}
+#lehepakett {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+#menyykiht {
+    width: 250px;
+    background: navajowhite;
+    padding: 20px;
+    border-right: 1px solid gray;
+    height: 100vh;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+#menyykiht h2 {
+    margin-top: 0;
+    color: black;
+    font-size: 1.4em;
+}
+
+#menyykiht ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10%;
+}
+
+#menyykiht li {
+    margin-bottom: 10px;
+}
+
+#menyykiht a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+#menyykiht a:hover {
+    margin-top: 15px;
+    display: inline-block;
+    background: dodgerblue;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+#sisukiht {
+    flex-grow: 1;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#sisukiht h2 {
+    color: black;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+
+#sisukiht p, #sisukiht div, #sisukiht span {
+    font-size: 1.1em;
+}
+
+
+#sisukiht a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.05em;
+    margin-right: 15px;
+    transition: 0.2s;
+}
+
+#sisukiht a:hover {
+    color: darkred;
+}
+
+
+#sisukiht input[type="text"],
+#sisukiht input[type="number"],
+#sisukiht textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.05em;
+    box-sizing: border-box;
+    background: white;
+}
+
+#sisukiht textarea {
+    height: 140px;
+
+}
+
+#sisukiht input[type="submit"] {
+    background: dodgerblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#sisukiht input[type="submit"]:hover {
+    background: dodgerblue;
+}
+
+
+#jalusekiht {
+    padding: 20px;
+    text-align: center;
+}

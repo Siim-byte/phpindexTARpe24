@@ -32,6 +32,7 @@ if (isset($_REQUEST["muutmisid"])) {
     );
     $kask->execute();
 }
+
 ?>
     <!DOCTYPE html>
     <html lang="et">
@@ -73,6 +74,7 @@ if (isset($_REQUEST["muutmisid"])) {
                 if ($kask->fetch()) {
                     if (isset($_REQUEST["muutmine"])) {
                         echo "
+                        
                    <form action='".$_SERVER["PHP_SELF"]."'>
                      <input type='hidden' name='muutmisid' value='$id'/>
                      <h2>Toote muutmine</h2>
@@ -96,6 +98,7 @@ if (isset($_REQUEST["muutmisid"])) {
                        
                      <input type='submit' value='Muuda' />
                    </form>
+                   
                 ";
                     } else {
                         echo "<h2>".htmlspecialchars($nimi)."</h2>";
@@ -136,11 +139,17 @@ if (isset($_REQUEST["muutmisid"])) {
                     </dd>
                     <input type="submit" value="Sisesta" />
                 </form>
+
                 <?php
+
             }
             ?>
         </div>
+
+
     </div>
+    <a href="Firma.php">Esileht</a>
+
 
     <div id="jalusekiht">
         Siim
